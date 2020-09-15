@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="1e12e1f5-8f61-4acb-849d-87da9e3b4055"
+    Name="5c9ada56-f5f8-4bb4-b795-e39217022b4f"
     Publisher="CN=zhangjin"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="1e12e1f5-8f61-4acb-849d-87da9e3b4055" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="5c9ada56-f5f8-4bb4-b795-e39217022b4f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>Demo</DisplayName>
@@ -39,6 +39,9 @@
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/>
+          <uap:Rotation Preference="landscapeFlipped"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>

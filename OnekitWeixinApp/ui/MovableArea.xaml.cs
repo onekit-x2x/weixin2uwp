@@ -17,14 +17,11 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverImage : UserControl
+    public sealed partial class MovableArea : UserControl
     {
-        public CoverImage()
+        public MovableArea()
         {
             this.InitializeComponent();
         }
-        public String Src { get; set; }
-        public EventHandler Load;
-        public EventHandler Error;
     }
 }

@@ -17,14 +17,18 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverImage : UserControl
+    public sealed partial class MatchMedia : UserControl
     {
-        public CoverImage()
+        public MatchMedia()
         {
             this.InitializeComponent();
         }
-        public String Src { get; set; }
-        public EventHandler Load;
-        public EventHandler Error;
+        new public double MinWidth { get; set; }
+        new public double MaxWidth { get; set; }
+        new public double Width { get; set; }
+        new public double MinHeight { get; set; }
+        new public double MaxHeight { get; set; }
+        new public double Height { get; set; }
+        public string Orientation { get; set; }
     }
 }

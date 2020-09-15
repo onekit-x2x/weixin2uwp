@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{8C3FEBE3-FFEC-482E-B972-30F921557221}</ProjectGuid>
+    <ProjectGuid>{9EE7B68D-E525-4184-BF9D-712A37D05D9F}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Demo</RootNamespace>
@@ -119,6 +119,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -141,6 +144,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
@@ -148,9 +155,25 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OnekitJS\OnekitJS.csproj">
+      <Project>{4426d320-bbb6-4dc9-9412-bfd49e44ef4b}</Project>
+      <Name>OnekitJS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnekitW3C\OnekitW3C.csproj">
+      <Project>{d2bce32a-9c8b-4638-91c8-7d9245778215}</Project>
+      <Name>OnekitW3C</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OnekitWeixinApp\OnekitWeixinApp.csproj">
       <Project>{de519e8c-590c-47b0-a678-8a314eca6f73}</Project>
       <Name>OnekitWeixinApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Onekit\Onekit.csproj">
+      <Project>{d50f5289-5cc6-47b2-9d8e-f4a83f3dac9f}</Project>
+      <Name>Onekit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TheKit\Thekit\Thekit.csproj">
+      <Project>{35842946-cc58-46b6-bf29-320e0095f837}</Project>
+      <Name>Thekit</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
