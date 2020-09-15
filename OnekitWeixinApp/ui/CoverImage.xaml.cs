@@ -23,8 +23,8 @@ namespace cn.onekit.weixin.ui
         {
             this.InitializeComponent();
         }
-        public String Src { get; set; }
-        public EventHandler Load;
-        public EventHandler Error;
+        public String src { get; set; }
+        public EventHandler onLoad;
+        public EventHandler onError;
     }
 }

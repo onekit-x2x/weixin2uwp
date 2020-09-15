@@ -23,6 +23,6 @@ namespace cn.onekit.weixin.ui
         {
             this.InitializeComponent();
         }
-        public String ScrollTop{get;set;}
+        public String scrollTop{get;set;}
     }
 }
