@@ -130,6 +130,21 @@
     <Compile Include="ui\CoverImage.xaml.cs">
       <DependentUpon>CoverImage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ui\CoverView.xaml.cs">
+      <DependentUpon>CoverView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ui\MatchMedia.xaml.cs">
+      <DependentUpon>MatchMedia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ui\MovableArea.xaml.cs">
+      <DependentUpon>MovableArea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ui\MovableView.xaml.cs">
+      <DependentUpon>MovableView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ui\ScrollView.xaml.cs">
+      <DependentUpon>ScrollView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ui\View.xaml.cs">
       <DependentUpon>View.xaml</DependentUpon>
     </Compile>
@@ -168,6 +183,26 @@
     <Page Include="ui\CoverImage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ui\CoverView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ui\MatchMedia.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ui\MovableArea.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ui\MovableView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ui\ScrollView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ui\View.xaml">
       <SubType>Designer</SubType>
