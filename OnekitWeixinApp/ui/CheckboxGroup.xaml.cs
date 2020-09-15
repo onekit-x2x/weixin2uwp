@@ -17,12 +17,12 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverView : UserControl
+    public sealed partial class CheckboxGroup : UserControl
     {
-        public CoverView()
+        public CheckboxGroup()
         {
             this.InitializeComponent();
         }
-        public String ScrollTop{get;set;}
+        public EventHandler bindchange { get; set; }
     }
 }

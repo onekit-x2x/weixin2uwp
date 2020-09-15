@@ -23,12 +23,12 @@ namespace cn.onekit.weixin.ui
         {
             this.InitializeComponent();
         }
-         public double minWidth { get; set; }
-         public double maxWidth { get; set; }
-         public double width { get; set; }
-         public double minHeight { get; set; }
-         public double maxHeight { get; set; }
-         public double height { get; set; }
-        public string orientation { get; set; }
+        new public double MinWidth { get; set; }
+        new public double MaxWidth { get; set; }
+        new public double Width { get; set; }
+        new public double MinHeight { get; set; }
+        new public double MaxHeight { get; set; }
+        new public double Height { get; set; }
+        public string Orientation { get; set; }
     }
 }

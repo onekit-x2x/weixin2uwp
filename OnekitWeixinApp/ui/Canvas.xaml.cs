@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -17,12 +18,20 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverView : UserControl
+    public sealed partial class Canvas : UserControl
     {
-        public CoverView()
+        public Canvas()
         {
             this.InitializeComponent();
         }
-        public String ScrollTop{get;set;}
+        public string Type { set; get; }
+        public string CanvasId { set; get; }
+        public bool DisableScroll { set; get; }
+        public EventHandler bindtouchstart { get; set; }
+        public EventHandler bindtouchmove { get; set; }
+        public EventHandler bindtouchend { get; set; }
+        public EventHandler bindtouchcancel { get; set; }
+        public EventHandler bindlongtap { get; set; }
+        public EventHandler binderror { get; set; }
     }
 }

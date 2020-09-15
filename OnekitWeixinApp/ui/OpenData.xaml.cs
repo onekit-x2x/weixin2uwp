@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -17,12 +18,18 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverView : UserControl
+    public sealed partial class OpenData : UserControl
     {
-        public CoverView()
+        public OpenData()
         {
             this.InitializeComponent();
         }
-        public String ScrollTop{get;set;}
+        public string Type { get; set; }
+        public string OpenGid { get; set; }
+        [DefaultValue("en")]
+        public string Lang { get; set; }
+        public string DefaultText { get; set; }
+        public string DefaultAvatar { get; set; }
+        public EventHandler binderror { get; set; }
     }
 }

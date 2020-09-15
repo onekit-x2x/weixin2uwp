@@ -17,12 +17,15 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverView : UserControl
+    public sealed partial class Form : UserControl
     {
-        public CoverView()
+        public Form()
         {
             this.InitializeComponent();
         }
-        public String ScrollTop{get;set;}
+        public bool ReportSubmit { get; set; }
+        public double ReportSubmitTimeout { get; set; }
+        public EventHandler bindsubmit { get; set; }
+        public EventHandler bindreset { get; set; }
     }
 }

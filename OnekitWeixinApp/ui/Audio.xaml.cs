@@ -17,12 +17,22 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverView : UserControl
+    public sealed partial class Audio : UserControl
     {
-        public CoverView()
+        public Audio()
         {
             this.InitializeComponent();
         }
-        public String ScrollTop{get;set;}
+        public string Src { set; get; }
+        public bool Loop { set; get; }
+        public bool Controls { set; get; }
+        public string Poster { set; get; }
+       new public string Name { set; get; }
+        public string Author { set; get; }
+        public EventHandler binderror { set; get; }
+        public EventHandler bindplay { set; get; }
+        public EventHandler bindpause { set; get; }
+        public EventHandler bindtimeupdate { set; get; }
+        public EventHandler bindended { set; get; }
     }
 }

@@ -17,12 +17,11 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverView : UserControl
+    public sealed partial class PickerViewColumn : UserControl
     {
-        public CoverView()
+        public PickerViewColumn()
         {
             this.InitializeComponent();
         }
-        public String ScrollTop{get;set;}
     }
 }

@@ -17,12 +17,13 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverView : UserControl
+    public sealed partial class SwiperItem : UserControl
     {
-        public CoverView()
+        public SwiperItem()
         {
             this.InitializeComponent();
         }
-        public String ScrollTop{get;set;}
+        public string ItemId { get; set; }
+        public bool SkipHiddenItemLayout { get; set; }
     }
 }

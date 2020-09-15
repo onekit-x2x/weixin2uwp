@@ -28,29 +28,29 @@ namespace cn.onekit.weixin.ui
             this.InitializeComponent();
         }
         [DefaultValue("none")]
-        public string direction { get; set; }
-        public bool inertia { get; set; }
-        public string outOfBounds { get; set; }
-        public double x { get; set; }
-        public double y { get; set; }
+        public string Direction { get; set; }
+        public bool Inertia { get; set; }
+        public string OutOfBounds { get; set; }
+        public double X { get; set; }
+        public double Y { get; set; }
         [DefaultValue(20)]
-        public double damping { get; set; }
+        public double Damping { get; set; }
         [DefaultValue(2)]
-        public double friction { get; set; }
-        public bool disabled { get; set; }
-        public double scale { get; set; }
+        public double Friction { get; set; }
+        public bool Disabled { get; set; }
+        new  public double Scale { get; set; }
         [DefaultValue(0.5)]
-        public double scaleMin { get; set; }
+        public double ScaleMin { get; set; }
         [DefaultValue(10)]
-        public double scaleMax { get; set; }
+        public double DcaleMax { get; set; }
         [DefaultValue(1)]
-        public double scaleValue { get; set; }
+        public double DcaleValue { get; set; }
         [DefaultValue(true)]
-        public bool animation { get; set; }
+        public bool Animation { get; set; }
 
-        public EventHandler onChange;
-        public EventHandler onScale;
-        public EventHandler onHtouchmove;
-        public EventHandler onVtouchmove;
+        public EventHandler bindchange { get; set; }
+        public EventHandler bindscale { get; set; }
+        public EventHandler htouchmove { get; set; }
+        public EventHandler vtouchmove { get; set; }
     }
 }

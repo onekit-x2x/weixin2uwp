@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Foundation.Metadata;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -17,12 +19,18 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverView : UserControl
+    public sealed partial class NavigationBar : UserControl
     {
-        public CoverView()
+        public NavigationBar()
         {
             this.InitializeComponent();
         }
-        public String ScrollTop{get;set;}
+        public string Title { get; set; }
+        new public bool Loading { get; set; }
+        public string FrontColor { get; set; }
+        public string BackgroundColor { get; set; }
+        public double ColorAnimationDuration { get; set; }
+        [DefaultValue("linear")]
+        public string ColorAnimationTimingFunc { get; set; }
     }
 }

@@ -11,12 +11,12 @@ namespace cn.onekit.weixin.ui
             this.InitializeComponent();
         }
 
-        public bool hoverClass { get; set; }
+        public bool HoverClass { get; set; }
         [DefaultValue(false)]
-        public bool hoverStopPropagation { get; set; }
+        public bool HoverStopPropagation { get; set; }
         [DefaultValue(50)]
-        public int hoverStartTime { get; set; }
+        public double HoverStartTime { get; set; }
         [DefaultValue(400)]
-        public int hoverStayTime { get; set; }
+        public double HoverStayTime { get; set; }
     }
 }

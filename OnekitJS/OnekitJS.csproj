@@ -120,6 +120,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Array.cs" />
     <Compile Include="ArrayBuffer.cs" />
     <Compile Include="Dict.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

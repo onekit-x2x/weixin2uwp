@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -17,12 +18,16 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverView : UserControl
+    public sealed partial class Radio : UserControl
     {
-        public CoverView()
+        public Radio()
         {
             this.InitializeComponent();
         }
-        public String ScrollTop{get;set;}
+        public string Value { get; set; }
+        public bool Checked { get; set; }
+        public bool Disabled { get; set; }
+        [DefaultValue("#09BB07")]
+        public string Color { get; set; }
     }
 }

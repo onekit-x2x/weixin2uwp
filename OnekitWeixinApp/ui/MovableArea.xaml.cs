@@ -23,6 +23,6 @@ namespace cn.onekit.weixin.ui
         {
             this.InitializeComponent();
         }
-        public bool scaleArea{get;set;}
+        public bool ScaleArea{get;set;}
     }
 }

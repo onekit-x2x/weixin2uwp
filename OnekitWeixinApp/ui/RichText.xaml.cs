@@ -1,5 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
+using cn.onekit.js;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -17,12 +18,14 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverView : UserControl
+    public sealed partial class RichText : UserControl
     {
-        public CoverView()
+        public RichText()
         {
             this.InitializeComponent();
         }
-        public String ScrollTop{get;set;}
+    //   [DefaultValue(new Array()  )]
+        public object Nodes { get; set; }
+        public string Space { get; set; }
     }
 }

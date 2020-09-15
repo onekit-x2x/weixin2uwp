@@ -27,14 +27,44 @@ namespace cn.onekit.weixin.ui
         {
             this.InitializeComponent();
         }
-        public bool scrollX { get; set; }
-        public bool scrollY { get; set; }
+        public bool ScrollX { get; set; }
+        public bool ScrollY { get; set; }
         [DefaultValue(50)]
-        public double upperThreshold { get; set; }
+        public double UpperThreshold { get; set; }
         [DefaultValue(50)]
-        public double lowerThreshold { get; set; }
-        public double scrollTop { get; set; }
-        public double scrollLeft { get; set; }
-        public double lowerThreshold { get; set; }
+        public double LowerThreshold { get; set; }
+        public double ScrollTop { get; set; }
+        public double ScrollLeft { get; set; }
+        public string ScrollIntoView { get; set; }
+        public bool ScrollWithAnimation { get; set; }
+        public bool EnableBackToTop { get; set; }
+        public bool EnableFlex { get; set; }
+        public bool ScrollAnchoring { get; set; }
+        public bool RefresherEnabled { get; set; }
+        [DefaultValue(45)]
+        public string RefresherThreshold { get; set; }
+        [DefaultValue("black")]
+        public string RefresherDefaultStyle { get; set; }
+        [DefaultValue("#FFF")]
+        public bool RefresherBackground { get; set; }
+        public bool RefresherTriggered { get; set; }
+        public bool Enhanced { get; set; }
+        [DefaultValue(true)]
+        public bool Bounces { get; set; }
+        [DefaultValue(true)]
+        public bool ShowScrollbar { get; set; }
+        public bool PagingEnabled { get; set; }
+        public bool FastDeceleration { get; set; }
+        public EventHandler binddragstart { get; set; }
+        public EventHandler binddragging { get; set; }
+        public EventHandler binddragend { get; set; }
+        public EventHandler bindscrolltoupper { get; set; }
+        public EventHandler bindscrolltolower { get; set; }
+        public EventHandler bindscroll { get; set; }
+        public EventHandler bindrefresherpulling { get; set; }
+        public EventHandler bindrefresherrefresh { get; set; }
+        public EventHandler bindrefresherabort { get; set; }
+        public EventHandler bindrefresherrestore { get; set; }
+        public EventHandler bindDragging { get; set; }
     }
 }

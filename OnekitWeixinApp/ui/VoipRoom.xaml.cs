@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -17,12 +18,17 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverView : UserControl
+    public sealed partial class VoipRoom : UserControl
     {
-        public CoverView()
+        public VoipRoom()
         {
             this.InitializeComponent();
         }
-        public String ScrollTop{get;set;}
+        public string Openid { get; set; }
+        [DefaultValue("camera")]
+        public string Mode { get; set; }
+        [DefaultValue("front")]
+        public string DevicePosition { get; set; }
+        public EventHandler binderror { get; set; }
     }
 }

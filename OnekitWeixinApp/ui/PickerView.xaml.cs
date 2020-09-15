@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using cn.onekit.js;
+
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -17,12 +19,20 @@ using Windows.UI.Xaml.Navigation;
 
 namespace cn.onekit.weixin.ui
 {
-    public sealed partial class CoverView : UserControl
+    public sealed partial class PickerView : UserControl
     {
-        public CoverView()
+        public PickerView()
         {
             this.InitializeComponent();
         }
-        public String ScrollTop{get;set;}
+        public Array Value { get; set; }
+        public string IndicatorStyle { get; set; }
+        public string IndicatorClass { get; set; }
+        public string MaskStyle { get; set; }
+        public string MaskClass { get; set; }
+
+        public System.EventHandler bindchange { get; set; }
+        public System.EventHandler bindpickstart { get; set; }
+        public System.EventHandler bindpickend { get; set; }
     }
 }
