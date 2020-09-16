@@ -31,6 +31,8 @@ namespace Demo
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            ApplicationView.PreferredLaunchViewSize = new Size(375, 667);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
         }
 
         /// <summary>
@@ -40,6 +42,10 @@ namespace Demo
         /// <param name="e">有关启动请求和过程的详细信息。</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
+
+            ApplicationView.GetForCurrentView().SetPreferredMinSize(
+                    new Size { Width = 320, Height = 568 });
+
             // 不要在窗口已包含内容时重复应用程序初始化，
             // 只需确保窗口处于活动状态
             if (!(Window.Current.Content is Frame rootFrame))

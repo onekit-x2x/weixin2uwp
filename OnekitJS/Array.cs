@@ -7,7 +7,7 @@ using Windows.Data.Json;
 
 namespace cn.onekit.js
 {
-    public class Array:List<JsonObject>
+    public class Array:List<IJsonValue>
     {
         public Array()
         {
