@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cn.onekit.js.core
+namespace onekit
 {
-    public class JsFile
+    public class ArrayBuffer
     {
     }
 }

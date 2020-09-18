@@ -1,4 +1,4 @@
-﻿using cn.onekit.js;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +10,8 @@ namespace cn.onekit.w3c
     public class Event:EventArgs
     {
         private Element currentTarget;
-        private Dict detail;
-        //private Dict  mark;
+        private IDictionary<string,object> detail;
+        //private IDictionary<string,object>  mark;
         //  private bool mut;
         private Element target;
         private int timeStamp;
@@ -19,8 +19,8 @@ namespace cn.onekit.w3c
         //
         public Event(
                 string type,
-                Dict detail,
-                //       Dict  mark,
+                IDictionary<string,object> detail,
+                //       IDictionary<string,object>  mark,
                 //   bool mut,
                 Element currentTarget,
                 Element target,
@@ -39,11 +39,11 @@ namespace cn.onekit.w3c
         {
             return currentTarget;
         }
-        public Dict getDetail()
+        public IDictionary<string,object> getDetail()
         {
             return detail;
         }
-        /* public Dict getMark(){
+        /* public IDictionary<string,object> getMark(){
              return mark;
          }*/
         /* public bool getMut(){
@@ -61,7 +61,7 @@ namespace cn.onekit.w3c
         {
             return type;
         }
-        /* public Event(string type,Dict detail){
+        /* public Event(string type,IDictionary<string,object> detail){
              this.type=type;
              this.detail = detail;
          }*/

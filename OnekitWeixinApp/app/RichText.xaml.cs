@@ -1,5 +1,5 @@
 ﻿
-using cn.onekit.js;
+
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
@@ -24,7 +24,7 @@ namespace cn.onekit.weixin.ui
         {
             this.InitializeComponent();
         }
-    //   [DefaultValue(new Array()  )]
+    //   [DefaultValue(new IEnumerable<object>()  )]
         public object Nodes { get; set; }
         public string Space { get; set; }
     }

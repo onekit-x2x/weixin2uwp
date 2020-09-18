@@ -1,5 +1,5 @@
 ﻿
-using cn.onekit.js;
+
 
 using System.Collections.Generic;
 using System.IO;
@@ -25,7 +25,7 @@ namespace cn.onekit.weixin.ui
         {
             this.InitializeComponent();
         }
-        public Array Value { get; set; }
+        public IEnumerable<object> Value { get; set; }
         public string IndicatorStyle { get; set; }
         public string IndicatorClass { get; set; }
         public string MaskStyle { get; set; }

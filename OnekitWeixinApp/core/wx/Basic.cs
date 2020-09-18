@@ -1,4 +1,6 @@
-﻿using cn.onekit.js;
+﻿
+
+using onekit;
 
 namespace cn.onekit.weixin.api
 {

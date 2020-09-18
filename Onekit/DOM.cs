@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using java;
+using thekit;
+using boolean = System.Boolean;
+using View = Windows.UI.Xaml.FrameworkElement;
+using ViewGroup = Windows.UI.Xaml.Controls.Panel;
+using Activity = Windows.UI.Xaml.Controls.Page;
 namespace onekit
 {
+
     public class DOM
     {
         public static int index0(View THIS)
@@ -27,14 +28,14 @@ namespace onekit
             for (int i = 0; i < ((ViewGroup)THIS.getParent()).getChildCount(); i++)
             {
                 View v = ((ViewGroup)THIS.getParent()).getChildAt(i);
-                if (v.getVisibility() == View.GONE)
+                if (v.getVisibility() == View_.GONE)
                 {
                     continue;
                 }
-                if (v instanceof LITERAL_){
+                if (v is LITERAL_){
                 continue;
             }
-            if (v instanceof BeforeAfter_){
+            if (v is BeforeAfter_){
                 continue;
             }
             if (v.hashCode() == THIS.hashCode())
@@ -46,14 +47,15 @@ namespace onekit
         return -1;
     }
 
-    public static bool isRoot(View view)
+    public static boolean isRoot(View view)
     {
 
         return view.getParent().hashCode() == ((Activity)view.getContext()).findViewById(android.R.id.content).hashCode();
     }
 
-    /*  public static <JsObject extends View> JsObject getRoot(Context context) {
+    /*  public static <JsObject : View> JsObject getRoot(Context context) {
           return  ((Activity)context).getWindow().getDecorView();
       }*/
 }
+
 }

@@ -1,5 +1,4 @@
 ﻿
-using cn.onekit.js;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,14 +34,14 @@ namespace cn.onekit.weixin.ui
         [DefaultValue(20)]
         public double MaxScale { get; set; }
         [DefaultValue(20)]
-        public cn.onekit.js.Array Markers { get; set; }
-        public cn.onekit.js.Array Covers { get; set; }
-        public cn.onekit.js.Array Polyline { get; set; }
-        public cn.onekit.js.Array Circles { get; set; }
-        public cn.onekit.js.Array Controls { get; set; }
-        public cn.onekit.js.Array IncludePoints { get; set; }
+        public IEnumerable<object> Markers { get; set; }
+        public IEnumerable<object> Covers { get; set; }
+        public IEnumerable<object> Polyline { get; set; }
+        public IEnumerable<object> Circles { get; set; }
+        public IEnumerable<object> Controls { get; set; }
+        public IEnumerable<object> IncludePoints { get; set; }
         public bool ShowLocation { get; set; }
-        public cn.onekit.js.Array Polygons { get; set; }
+        public IEnumerable<object> Polygons { get; set; }
         public string Subkey { get; set; }
         [DefaultValue(1)]
         public double LayerStyle { get; set; }

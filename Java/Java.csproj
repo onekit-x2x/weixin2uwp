@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D50F5289-5CC6-47B2-9D8E-F4A83F3DAC9F}</ProjectGuid>
+    <ProjectGuid>{AAA19059-0583-4FAC-B54D-D53F0569722A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>onekit</RootNamespace>
-    <AssemblyName>Onekit</AssemblyName>
+    <RootNamespace>java</RootNamespace>
+    <AssemblyName>Java</AssemblyName>
     <DefaultLanguage>zh-CN</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
@@ -120,32 +120,21 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ArrayBuffer.cs" />
-    <Compile Include="BeforeAfter_.cs" />
-    <Compile Include="DOM.cs" />
-    <Compile Include="LITERAL_.cs" />
-    <Compile Include="OneKit.cs" />
+    <Compile Include="lang\Class_.cs" />
+    <Compile Include="lang\Exception_.cs" />
+    <Compile Include="lang\reflect\Field_.cs" />
+    <Compile Include="lang\String.cs" />
+    <Compile Include="lang\StringBuilder_.cs" />
+    <Compile Include="lang\String_.cs" />
+    <Compile Include="lang\Object_.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Onekit.rd.xml" />
+    <Compile Include="util\UUID.cs" />
+    <EmbeddedResource Include="Properties\Java.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.10</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Android\Android.csproj">
-      <Project>{44974018-2ca9-4d73-9fe4-d0742e8e1bcf}</Project>
-      <Name>Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Java\Java.csproj">
-      <Project>{aaa19059-0583-4fac-b54d-d53f0569722a}</Project>
-      <Name>Java</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TheKit\Thekit\Thekit.csproj">
-      <Project>{35842946-CC58-46B6-BF29-320E0095F837}</Project>
-      <Name>Thekit</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

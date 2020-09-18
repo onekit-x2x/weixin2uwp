@@ -1,5 +1,5 @@
 ﻿
-using cn.onekit.js;
+
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
@@ -33,7 +33,7 @@ namespace cn.onekit.weixin.ui
         public System.EventHandler bindchange { get; set; }
         public object Value { get; set; }
         //
-        public Array Range { get; set; }
+        public IEnumerable<object> Range { get; set; }
         public string RangeKey { get; set; }
         //
         public System.EventHandler bindcolumnchange { get; set; }

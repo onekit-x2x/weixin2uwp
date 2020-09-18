@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace cn.onekit.weixin.app.core
 {
-    public class WeixinFile:JsFile
+    public class WeixinFile : JsFile
     {
     }
 }

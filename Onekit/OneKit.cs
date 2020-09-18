@@ -1,16 +1,25 @@
-﻿using System;
+﻿using android.content;
+using android.os;
+using java;
+using java.lang;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Class = System.Type;
+using Field = System.Reflection.FieldInfo;
+using thekit.android;
+using java.lang.reflect;
+using java.util;
 
 namespace onekit
 {
+
     public class OneKit
     {
         public static string currentUrl;
 
-        public static void set(Object obj, Object value, string key)
+        public static void set(System.Object obj, System.Object value, string key)
         {
             try
             {
@@ -18,13 +27,13 @@ namespace onekit
                 Field filed = clazz.getField(key);
                 filed.set(obj, value);
             }
-            catch (Exception e)
+            catch (System.Exception e)
             {
-                e.printStackTrace();
+                java.Exception_.printStackTrace(e);
             }
         }
 
-        public static Object get(Object obj, Object key)
+        public static System.Object get(System.Object obj, System.Object key)
         {
             try
             {
@@ -36,7 +45,7 @@ namespace onekit
                 }
                 return field.get(obj);
             }
-            catch (Exception e)
+            catch (System.Exception e)
             {
                 //Log.e("[get]==========", obj + " " +key);
                 return null;
@@ -51,9 +60,9 @@ namespace onekit
         public static Bundle querystring2extras(string querystring)
         {
             Bundle extras = new Bundle();
-            for (string param : querystring.split("&"))
+            foreach (string param in java.String_.split(querystring, "&"))
             {
-                string[] arr = param.split("=");
+                string[] arr = java.String_.split(param, "=");
                 extras.putString(arr[0], arr[1]);
             }
             return extras;
@@ -67,9 +76,9 @@ namespace onekit
             }
             StringBuilder querystring = new StringBuilder();
             int i = 0;
-            for (string key : extras.keySet())
+            foreach(string key in extras.keySet())
             {
-                if (key.startsWith("onekit_"))
+                if (java.String_.startsWith(key, "onekit_"))
                 {
                     continue;
                 }
@@ -77,12 +86,12 @@ namespace onekit
                 {
                     querystring.append("&");
                 }
-                querystring.append(string.format("%s=%s", key, extras.getString(key)));
+                querystring.append(String.format("%s=%s", key, extras.getString(key)));
             }
-            return querystring.ToString();
+            return querystring.toString();
         }
 
-        public static Class<? extends Activity> tabsActivityClass;
+        public static Class_<? : Activity> tabsActivityClass;
 
         public static string class2url(Context context, string clazz)
         {
@@ -161,25 +170,25 @@ namespace onekit
             for (int i = 0; i < 2; i++)
             {
                 UUID uuid = UUID.randomUUID();
-                string str = uuid.ToString().replaceAll("-", "");
+                string str = uuid.toString().replaceAll("-", "");
                 uuidStr.append(str);
             }
-            return uuidStr.ToString();
+            return uuidStr.toString();
         }
 
         public static string createUUIDfileName(string fileName)
         {
             string uuid = createUUID();
-            string ext = fileName.substring(fileName.lastIndexOf("."), fileName.length());
+            string ext = fileName.substring(java.String_.lastIndexOf(fileName, "."), fileName.length());
             return uuid + ext;
         }
 
-        public static bool isEmpty(string aString)
+        public static boolean isEmpty(string aString)
         {
             return aString == null || aString.trim().equals("");
         }
         /*
-            public static bool isNaN(Object value) {
+            public static boolean isNaN(Object value) {
 
                 if (value == null) {
                     return true;
@@ -188,9 +197,9 @@ namespace onekit
                     Number number = (Number) value;
                     return Double.valueOf(number.doubleValue()).equals(Double.NaN);
                 }
-                if (value instanceof string) {
+                if (value instanceof String) {
 
-                    string aString = (string) value;
+                    String aString = (String) value;
                     if (aString.equals("NaN")) {
                         return true;
                     }
@@ -224,7 +233,7 @@ namespace onekit
             return key.substring(0, 1).toLowerCase() + key.substring(1);
         }
         /*
-            public static bool isNumber(JsObject value) {
+            public static boolean isNumber(JsObject value) {
                 if (value == null) {
                     return false;
                 }
@@ -233,7 +242,7 @@ namespace onekit
                     return !value.equals(Double.NaN);
                 }
                 try {
-                    Double.parseDouble(value.ToString());
+                    Double.parseDouble(value.toString());
                     return true;
                 } catch (Exception e) {
                     return false;
@@ -255,14 +264,14 @@ namespace onekit
                 result.append(str);
             }
             //
-            return result.ToString();
+            return result.toString();
         }
 
         public static string fromCamelCase(string aString)
         {
             StringBuilder result = new StringBuilder();
             //
-            for (char chr : aString.toCharArray())
+            foreach (char chr in aString.toCharArray())
             {
                 if (result.length() > 0)
                 {
@@ -271,10 +280,10 @@ namespace onekit
                         result.append("-");
                     }
                 }
-                result.append(string.valueOf(chr).toLowerCase());
+                result.append(String.valueOf(chr).toLowerCase());
             }
             //
-            return result.ToString();
+            return result.toString();
         }
     }
 

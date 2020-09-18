@@ -1,5 +1,5 @@
 ﻿
-using cn.onekit.js;
+
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
@@ -29,7 +29,7 @@ namespace cn.onekit.weixin.ui
         public double Duration { get; set; }
         [DefaultValue(true)]
         public bool Controls { get; set; }
-        public Array DanmuList { get; set; }
+        public IEnumerable<object> DanmuList { get; set; }
         public bool DanmuBtn { get; set; }
         public bool EnableDanmu { get; set; }
         public bool Autoplay { get; set; }
