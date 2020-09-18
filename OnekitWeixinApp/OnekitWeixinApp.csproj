@@ -120,152 +120,153 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="api\System.cs" />
-    <Compile Include="api\Basic.cs" />
-    <Compile Include="api\WX.cs" />
-    <Compile Include="page\LaunchPage.xaml.cs">
+    <Compile Include="app\core\WeixinFile.cs" />
+    <Compile Include="core\wx\System.cs" />
+    <Compile Include="core\wx\Basic.cs" />
+    <Compile Include="WX.cs" />
+    <Compile Include="app\core\page\LaunchPage.xaml.cs">
       <DependentUpon>LaunchPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ui\Ad.xaml.cs">
+    <Compile Include="app\Ad.xaml.cs">
       <DependentUpon>Ad.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\AdCustom.xaml.cs">
+    <Compile Include="app\AdCustom.xaml.cs">
       <DependentUpon>AdCustom.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Audio.xaml.cs">
+    <Compile Include="app\Audio.xaml.cs">
       <DependentUpon>Audio.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Button.xaml.cs">
+    <Compile Include="app\Button.xaml.cs">
       <DependentUpon>Button.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Camera.xaml.cs">
+    <Compile Include="app\Camera.xaml.cs">
       <DependentUpon>Camera.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Canvas.xaml.cs">
+    <Compile Include="app\Canvas.xaml.cs">
       <DependentUpon>Canvas.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Checkbox.xaml.cs">
+    <Compile Include="app\Checkbox.xaml.cs">
       <DependentUpon>Checkbox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\CheckboxGroup.xaml.cs">
+    <Compile Include="app\CheckboxGroup.xaml.cs">
       <DependentUpon>CheckboxGroup.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\CoverImage.xaml.cs">
+    <Compile Include="app\CoverImage.xaml.cs">
       <DependentUpon>CoverImage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\CoverView.xaml.cs">
+    <Compile Include="app\CoverView.xaml.cs">
       <DependentUpon>CoverView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Editor.xaml.cs">
+    <Compile Include="app\Editor.xaml.cs">
       <DependentUpon>Editor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Form.xaml.cs">
+    <Compile Include="app\Form.xaml.cs">
       <DependentUpon>Form.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\FunctionalPageNavigator.xaml.cs">
+    <Compile Include="app\FunctionalPageNavigator.xaml.cs">
       <DependentUpon>FunctionalPageNavigator.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Icon.xaml.cs">
+    <Compile Include="app\Icon.xaml.cs">
       <DependentUpon>Icon.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Image.xaml.cs">
+    <Compile Include="app\Image.xaml.cs">
       <DependentUpon>Image.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Input.xaml.cs">
+    <Compile Include="app\Input.xaml.cs">
       <DependentUpon>Input.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Label.xaml.cs">
+    <Compile Include="app\Label.xaml.cs">
       <DependentUpon>Label.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\LivePlayer.xaml.cs">
+    <Compile Include="app\LivePlayer.xaml.cs">
       <DependentUpon>LivePlayer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\LivePusher.xaml.cs">
+    <Compile Include="app\LivePusher.xaml.cs">
       <DependentUpon>LivePusher.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Map.xaml.cs">
+    <Compile Include="app\Map.xaml.cs">
       <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\MatchMedia.xaml.cs">
+    <Compile Include="app\MatchMedia.xaml.cs">
       <DependentUpon>MatchMedia.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\MovableArea.xaml.cs">
+    <Compile Include="app\MovableArea.xaml.cs">
       <DependentUpon>MovableArea.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\MovableView.xaml.cs">
+    <Compile Include="app\MovableView.xaml.cs">
       <DependentUpon>MovableView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\NavigationBar.xaml.cs">
+    <Compile Include="app\NavigationBar.xaml.cs">
       <DependentUpon>NavigationBar.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Navigator.xaml.cs">
+    <Compile Include="app\Navigator.xaml.cs">
       <DependentUpon>Navigator.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\OfficialAccount.xaml.cs">
+    <Compile Include="app\OfficialAccount.xaml.cs">
       <DependentUpon>OfficialAccount.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\OpenData.xaml.cs">
+    <Compile Include="app\OpenData.xaml.cs">
       <DependentUpon>OpenData.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\PageMeta.xaml.cs">
+    <Compile Include="app\PageMeta.xaml.cs">
       <DependentUpon>PageMeta.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Picker.xaml.cs">
+    <Compile Include="app\Picker.xaml.cs">
       <DependentUpon>Picker.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\PickerView.xaml.cs">
+    <Compile Include="app\PickerView.xaml.cs">
       <DependentUpon>PickerView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\PickerViewColumn.xaml.cs">
+    <Compile Include="app\PickerViewColumn.xaml.cs">
       <DependentUpon>PickerViewColumn.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Progress.xaml.cs">
+    <Compile Include="app\Progress.xaml.cs">
       <DependentUpon>Progress.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Radio.xaml.cs">
+    <Compile Include="app\Radio.xaml.cs">
       <DependentUpon>Radio.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\RadioGroup.xaml.cs">
+    <Compile Include="app\RadioGroup.xaml.cs">
       <DependentUpon>RadioGroup.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\RichText.xaml.cs">
+    <Compile Include="app\RichText.xaml.cs">
       <DependentUpon>RichText.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\ScrollView.xaml.cs">
+    <Compile Include="app\ScrollView.xaml.cs">
       <DependentUpon>ScrollView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Slider.xaml.cs">
+    <Compile Include="app\Slider.xaml.cs">
       <DependentUpon>Slider.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Swiper.xaml.cs">
+    <Compile Include="app\Swiper.xaml.cs">
       <DependentUpon>Swiper.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\SwiperItem.xaml.cs">
+    <Compile Include="app\SwiperItem.xaml.cs">
       <DependentUpon>SwiperItem.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Switch.xaml.cs">
+    <Compile Include="app\Switch.xaml.cs">
       <DependentUpon>Switch.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Text.xaml.cs">
+    <Compile Include="app\Text.xaml.cs">
       <DependentUpon>Text.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Textarea.xaml.cs">
+    <Compile Include="app\Textarea.xaml.cs">
       <DependentUpon>Textarea.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\Video.xaml.cs">
+    <Compile Include="app\Video.xaml.cs">
       <DependentUpon>Video.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\View.xaml.cs">
+    <Compile Include="app\View.xaml.cs">
       <DependentUpon>View.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\VoipRoom.xaml.cs">
+    <Compile Include="app\VoipRoom.xaml.cs">
       <DependentUpon>VoipRoom.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\WebView.xaml.cs">
+    <Compile Include="app\WebView.xaml.cs">
       <DependentUpon>WebView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ui\WeixinElement.cs" />
+    <Compile Include="app\core\WeixinElement.cs" />
     <EmbeddedResource Include="Properties\OnekitWeixinApp.rd.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -276,9 +277,7 @@
       <Version>6.2.10</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\OnekitJS\OnekitJS.csproj">
       <Project>{4426D320-BBB6-4DC9-9412-BFD49E44EF4B}</Project>
@@ -294,191 +293,191 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="page\LaunchPage.xaml">
+    <Page Include="app\core\page\LaunchPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ui\Ad.xaml">
+    <Page Include="app\Ad.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\AdCustom.xaml">
+    <Page Include="app\AdCustom.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Audio.xaml">
+    <Page Include="app\Audio.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Button.xaml">
+    <Page Include="app\Button.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Camera.xaml">
+    <Page Include="app\Camera.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Canvas.xaml">
+    <Page Include="app\Canvas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Checkbox.xaml">
+    <Page Include="app\Checkbox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\CheckboxGroup.xaml">
+    <Page Include="app\CheckboxGroup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\CoverImage.xaml">
+    <Page Include="app\CoverImage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\CoverView.xaml">
+    <Page Include="app\CoverView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ui\Editor.xaml">
+    <Page Include="app\Editor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Form.xaml">
+    <Page Include="app\Form.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\FunctionalPageNavigator.xaml">
+    <Page Include="app\FunctionalPageNavigator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Icon.xaml">
+    <Page Include="app\Icon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Image.xaml">
+    <Page Include="app\Image.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Input.xaml">
+    <Page Include="app\Input.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Label.xaml">
+    <Page Include="app\Label.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\LivePlayer.xaml">
+    <Page Include="app\LivePlayer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\LivePusher.xaml">
+    <Page Include="app\LivePusher.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Map.xaml">
+    <Page Include="app\Map.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\MatchMedia.xaml">
+    <Page Include="app\MatchMedia.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ui\MovableArea.xaml">
+    <Page Include="app\MovableArea.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ui\MovableView.xaml">
+    <Page Include="app\MovableView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ui\NavigationBar.xaml">
+    <Page Include="app\NavigationBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Navigator.xaml">
+    <Page Include="app\Navigator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\OfficialAccount.xaml">
+    <Page Include="app\OfficialAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\OpenData.xaml">
+    <Page Include="app\OpenData.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\PageMeta.xaml">
+    <Page Include="app\PageMeta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Picker.xaml">
+    <Page Include="app\Picker.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\PickerView.xaml">
+    <Page Include="app\PickerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\PickerViewColumn.xaml">
+    <Page Include="app\PickerViewColumn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Progress.xaml">
+    <Page Include="app\Progress.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Radio.xaml">
+    <Page Include="app\Radio.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\RadioGroup.xaml">
+    <Page Include="app\RadioGroup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\RichText.xaml">
+    <Page Include="app\RichText.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\ScrollView.xaml">
+    <Page Include="app\ScrollView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ui\Slider.xaml">
+    <Page Include="app\Slider.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Swiper.xaml">
+    <Page Include="app\Swiper.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\SwiperItem.xaml">
+    <Page Include="app\SwiperItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Switch.xaml">
+    <Page Include="app\Switch.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Text.xaml">
+    <Page Include="app\Text.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Textarea.xaml">
+    <Page Include="app\Textarea.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\Video.xaml">
+    <Page Include="app\Video.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\View.xaml">
+    <Page Include="app\View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\VoipRoom.xaml">
+    <Page Include="app\VoipRoom.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ui\WebView.xaml">
+    <Page Include="app\WebView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

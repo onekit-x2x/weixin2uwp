@@ -7,6 +7,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Image x:Name="imgImage"  />
+    <Image x:Name="imgImage" ImageOpened="imgImage_ImageOpened" ImageFailed="imgImage_ImageFailed"  />
 
 </UserControl>

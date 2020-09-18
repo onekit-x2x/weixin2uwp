@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnekitW3C
+namespace cn.onekit.js.core
 {
-    public class Class1
-    {
-    }
+    public abstract class JsClass : JsFile, object {
+
+
+}
 }

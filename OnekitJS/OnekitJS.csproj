@@ -120,16 +120,64 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="core\Iterator.cs" />
+    <Compile Include="Int16Array.cs" />
+    <Compile Include="Int32Array.cs" />
+    <Compile Include="Int8Array.cs" />
     <Compile Include="Array.cs" />
     <Compile Include="ArrayBuffer.cs" />
+    <Compile Include="core\function.cs" />
+    <Compile Include="core\JsBoolean.cs" />
+    <Compile Include="core\JsClass.cs" />
+    <Compile Include="core\JsFile.cs" />
+    <Compile Include="core\JsNumber.cs" />
+    <Compile Include="core\JsString.cs" />
+    <Compile Include="core\Onekit_JS.cs" />
+    <Compile Include="DataView.cs" />
+    <Compile Include="Date.cs" />
     <Compile Include="Dict.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="Float32Array.cs" />
+    <Compile Include="Float64Array.cs" />
+    <Compile Include="Infinity.cs" />
+    <Compile Include="Intl.cs" />
+    <Compile Include="JSON.cs" />
+    <Compile Include="Object_.cs" />
+    <Compile Include="WeakMap.cs" />
+    <Compile Include="URIError.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="Math.cs" />
+    <Compile Include="Null.cs" />
+    <Compile Include="Promise.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="InteralError.cs" />
+    <Compile Include="Proxy.cs" />
+    <Compile Include="Reflect.cs" />
+    <Compile Include="RegExp.cs" />
+    <Compile Include="Set.cs" />
+    <Compile Include="Symbol.cs" />
+    <Compile Include="TypedArray.cs" />
+    <Compile Include="TypeError.cs" />
+    <Compile Include="SyntaxError.cs" />
+    <Compile Include="ReferenceError.cs" />
+    <Compile Include="RangeError.cs" />
+    <Compile Include="Uint16Array.cs" />
+    <Compile Include="Uint32Array.cs" />
+    <Compile Include="Uint8Array.cs" />
+    <Compile Include="WeakSet.cs" />
+    <Compile Include="WebAssembly.cs" />
     <EmbeddedResource Include="Properties\OnekitJS.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.10</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TheKit\Thekit\Thekit.csproj">
+      <Project>{35842946-CC58-46B6-BF29-320E0095F837}</Project>
+      <Name>Thekit</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

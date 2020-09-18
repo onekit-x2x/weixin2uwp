@@ -120,9 +120,9 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="function.cs" />
-    <Compile Include="JsObject.cs" />
-    <Compile Include="JSON.cs" />
+    <Compile Include="BeforeAfter_.cs" />
+    <Compile Include="DOM.cs" />
+    <Compile Include="LITERAL_.cs" />
     <Compile Include="OneKit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Onekit.rd.xml" />

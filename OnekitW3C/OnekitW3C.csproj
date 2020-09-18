@@ -120,7 +120,14 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Console.cs" />
+    <Compile Include="core\FormItem_.cs" />
+    <Compile Include="Element.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="EventListener.cs" />
+    <Compile Include="EventTarget.cs" />
+    <Compile Include="LITERAL.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\OnekitW3C.rd.xml" />
   </ItemGroup>
@@ -130,7 +137,14 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="cn\" />
+    <ProjectReference Include="..\OnekitJS\OnekitJS.csproj">
+      <Project>{4426D320-BBB6-4DC9-9412-BFD49E44EF4B}</Project>
+      <Name>OnekitJS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Onekit\Onekit.csproj">
+      <Project>{D50F5289-5CC6-47B2-9D8E-F4A83F3DAC9F}</Project>
+      <Name>Onekit</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -34,7 +34,23 @@ namespace cn.onekit.weixin.ui
                 imgImage.Source = new BitmapImage(new Uri(_Src));
             }
         }
-        public EventHandler bindload { get; set; }
-        public EventHandler binderror { get; set; }
+        public event EventHandler bindload;
+        public event EventHandler binderror;
+
+        private void imgImage_ImageOpened(object sender, RoutedEventArgs e)
+        {
+            if (bindload != null)
+            {
+                bindload.Invoke(this, new EventArgs());
+            }
+        }
+
+        private void imgImage_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+            if (binderror != null)
+            {
+                binderror.Invoke(this, new EventArgs());
+            }
+        }
     }
 }

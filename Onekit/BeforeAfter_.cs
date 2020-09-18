@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace onekit
 {
-    public abstract class function
+    public interface BeforeAfter_
     {
-        public abstract JsObject invoke(params JsObject[] arguments);
     }
 }

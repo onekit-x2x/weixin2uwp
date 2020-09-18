@@ -26,5 +26,15 @@ namespace Demo
         {
             this.InitializeComponent();
         }
+
+        private void CoverImage_bindload(object sender, EventArgs e)
+        {
+            //console.log();
+        }
+
+        private void CoverImage_binderror(object sender, EventArgs e)
+        {
+           // console.log();
+        }
     }
 }
