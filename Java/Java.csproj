@@ -120,6 +120,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="lang\Array_.cs" />
     <Compile Include="lang\Class_.cs" />
     <Compile Include="lang\Exception_.cs" />
     <Compile Include="lang\reflect\Field_.cs" />

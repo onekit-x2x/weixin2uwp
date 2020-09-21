@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cn.onekit
+namespace cn.onekit.js
 {
-    public interface BeforeAfter_
+    public class JsArray
     {
     }
 }

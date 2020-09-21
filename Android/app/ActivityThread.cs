@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cn.onekit
+namespace android.app
 {
-    public interface BeforeAfter_
+    public partial class ActivityThread
     {
     }
 }

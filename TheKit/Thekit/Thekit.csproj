@@ -120,6 +120,8 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="android\Android.cs" />
+    <Compile Include="android\app\ActivityThread.cs" />
     <Compile Include="ASSET.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Thekit.rd.xml" />
@@ -129,6 +131,17 @@
       <Version>6.2.10</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Android\Android.csproj">
+      <Project>{44974018-2ca9-4d73-9fe4-d0742e8e1bcf}</Project>
+      <Name>Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Java\Java.csproj">
+      <Project>{aaa19059-0583-4fac-b54d-d53f0569722a}</Project>
+      <Name>Java</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

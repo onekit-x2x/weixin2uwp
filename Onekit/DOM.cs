@@ -4,7 +4,7 @@ using boolean = System.Boolean;
 using View = Windows.UI.Xaml.FrameworkElement;
 using ViewGroup = Windows.UI.Xaml.Controls.Panel;
 using Activity = Windows.UI.Xaml.Controls.Page;
-namespace onekit
+namespace cn.onekit
 {
 
     public class DOM

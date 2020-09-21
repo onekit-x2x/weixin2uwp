@@ -121,9 +121,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app\Activity.cs" />
+    <Compile Include="app\ActivityThread.cs" />
+    <Compile Include="app\Application.cs" />
+    <Compile Include="content\ComponentName.cs" />
     <Compile Include="content\Context.cs" />
+    <Compile Include="content\Intent.cs" />
+    <Compile Include="content\pm\PackageManager.cs" />
+    <Compile Include="content\pm\Resources.cs" />
     <Compile Include="os\Bundle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="util\DisplayMetrics.cs" />
+    <Compile Include="util\Size.cs" />
     <Compile Include="view\ViewGroup.cs" />
     <Compile Include="view\View.cs" />
     <EmbeddedResource Include="Properties\Android.rd.xml" />

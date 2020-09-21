@@ -1,4 +1,5 @@
-﻿using System;
+﻿using android.content.pm;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
@@ -13,6 +14,16 @@ namespace android.content
         public String getPackageName()
         {
             return "";
+        }
+
+        public PackageManager getPackageManager()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Resources getResources()
+        {
+            throw new NotImplementedException();
         }
     }
 }

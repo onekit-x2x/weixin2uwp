@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace onekit
+namespace cn.onekit
 {
     public interface LITERAL_
     {

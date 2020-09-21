@@ -2,17 +2,15 @@
 using android.os;
 using java;
 using java.lang;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Class = System.Type;
 using Field = System.Reflection.FieldInfo;
-using thekit.android;
 using java.lang.reflect;
 using java.util;
+using android.app;
+using boolean = System.Boolean;
 
-namespace onekit
+namespace cn.onekit
 {
 
     public class OneKit
@@ -91,7 +89,7 @@ namespace onekit
             return querystring.toString();
         }
 
-        public static Class_<? : Activity> tabsActivityClass;
+        public  static  Class<in Activity> tabsActivityClass;
 
         public static string class2url(Context context, string clazz)
         {
@@ -193,11 +191,11 @@ namespace onekit
                 if (value == null) {
                     return true;
                 }
-                if (value instanceof Number) {
+                if (value is Number) {
                     Number number = (Number) value;
                     return Double.valueOf(number.doubleValue()).equals(Double.NaN);
                 }
-                if (value instanceof String) {
+                if (value is String) {
 
                     String aString = (String) value;
                     if (aString.equals("NaN")) {
@@ -217,7 +215,7 @@ namespace onekit
                     }
                 }
 
-                if (value instanceof java.lang.Boolean) {
+                if (value is java.lang.Boolean) {
                     return false;
                 }
                 return !isNumber(value);
@@ -238,7 +236,7 @@ namespace onekit
                     return false;
                 }
 
-                if (value instanceof Number) {
+                if (value is Number) {
                     return !value.equals(Double.NaN);
                 }
                 try {
@@ -254,7 +252,7 @@ namespace onekit
             StringBuilder result = new StringBuilder();
             //
             string[] strings = aString.trim().split("-");
-            for (int i = 0; i < strings.length; i++)
+            for (int i = 0; i < strings.length(); i++)
             {
                 string str = strings[i];
                 if (i > 0)

@@ -7,7 +7,7 @@
     <ProjectGuid>{D50F5289-5CC6-47B2-9D8E-F4A83F3DAC9F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>onekit</RootNamespace>
+    <RootNamespace>cn.onekit</RootNamespace>
     <AssemblyName>Onekit</AssemblyName>
     <DefaultLanguage>zh-CN</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
@@ -120,7 +120,6 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ArrayBuffer.cs" />
     <Compile Include="BeforeAfter_.cs" />
     <Compile Include="DOM.cs" />
     <Compile Include="LITERAL_.cs" />
