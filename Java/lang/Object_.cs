@@ -1,4 +1,5 @@
-﻿using System;
+﻿using java.lang;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,9 @@ namespace java
         {
             return THIS.GetHashCode();
         }
-        public static Type getClass(this object THIS)
+        public static Class getClass(this object THIS)
         {
-            return THIS.GetType();
+            return new Class(THIS.GetType());
         }
         public static string toString(this object THIS)
         {

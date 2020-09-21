@@ -52,7 +52,7 @@ namespace thekit.android
             return size;//new Size(size.getWidth()/2,size.getHeight()/2);
         }
         static DisplayMetrics displayMetrics;
-        sealed static DisplayMetrics getDisplayMetrics()
+         static DisplayMetrics getDisplayMetrics()
         {
             if (displayMetrics == null)
             {

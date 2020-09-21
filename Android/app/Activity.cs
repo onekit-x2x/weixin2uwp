@@ -1,4 +1,5 @@
-﻿using System;
+﻿using java.view;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
@@ -9,6 +10,9 @@ namespace android.app
 {
     public  class Activity
     {
-       
+       public View findViewById(string id)
+        {
+            return null;
+        }
     }
 }

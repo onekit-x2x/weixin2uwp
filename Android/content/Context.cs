@@ -6,6 +6,7 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 namespace android.content
 {
@@ -22,6 +23,11 @@ namespace android.content
         }
 
         public Resources getResources()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static explicit operator Page(Context v)
         {
             throw new NotImplementedException();
         }

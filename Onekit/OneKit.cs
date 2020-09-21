@@ -3,12 +3,13 @@ using android.os;
 using java;
 using java.lang;
 using System.Text;
-using Class = System.Type;
+
 using Field = System.Reflection.FieldInfo;
 using java.lang.reflect;
 using java.util;
 using android.app;
-using boolean = System.Boolean;
+using bool = System.Boolean;
+using thekit.android;
 
 namespace cn.onekit
 {
@@ -89,7 +90,7 @@ namespace cn.onekit
             return querystring.toString();
         }
 
-        public  static  Class<in Activity> tabsActivityClass;
+        public  static Class<Activity> tabsActivityClass;
 
         public static string class2url(Context context, string clazz)
         {
@@ -181,12 +182,12 @@ namespace cn.onekit
             return uuid + ext;
         }
 
-        public static boolean isEmpty(string aString)
+        public static bool isEmpty(string aString)
         {
             return aString == null || aString.trim().equals("");
         }
         /*
-            public static boolean isNaN(Object value) {
+            public static bool isNaN(Object value) {
 
                 if (value == null) {
                     return true;
@@ -231,7 +232,7 @@ namespace cn.onekit
             return key.substring(0, 1).toLowerCase() + key.substring(1);
         }
         /*
-            public static boolean isNumber(JsObject value) {
+            public static bool isNumber(JsObject value) {
                 if (value == null) {
                     return false;
                 }

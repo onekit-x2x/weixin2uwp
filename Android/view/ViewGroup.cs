@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-namespace java
+namespace java.view
 {
-    public static class ViewGroup_
+    public  class ViewGroup
     {
-        public static int getChildCount(this Panel THIS)
+        public  int getChildCount()
         {
             return THIS.Children.Count;
         }
-        public static FrameworkElement getChildAt(this Panel THIS,int index)
+        public  FrameworkElement getChildAt(int index)
         {
             return (FrameworkElement)THIS.Children[index];
         }

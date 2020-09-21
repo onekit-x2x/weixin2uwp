@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace java.lang
 {
-    public static class Array_
+    public class Integer
     {
-        public static int length(this System.Array THIS)
-        {
-            return THIS.Length;
-        }
     }
 }

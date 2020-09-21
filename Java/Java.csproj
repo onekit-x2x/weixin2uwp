@@ -121,8 +121,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="lang\Array_.cs" />
-    <Compile Include="lang\Class_.cs" />
+    <Compile Include="lang\Class.cs" />
     <Compile Include="lang\Exception_.cs" />
+    <Compile Include="lang\Integer.cs" />
     <Compile Include="lang\reflect\Field_.cs" />
     <Compile Include="lang\String.cs" />
     <Compile Include="lang\StringBuilder_.cs" />

@@ -130,10 +130,13 @@
     <Compile Include="content\pm\Resources.cs" />
     <Compile Include="os\Bundle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="R.cs" />
     <Compile Include="util\DisplayMetrics.cs" />
     <Compile Include="util\Size.cs" />
+    <Compile Include="util\TypedValue.cs" />
     <Compile Include="view\ViewGroup.cs" />
     <Compile Include="view\View.cs" />
+    <Compile Include="view\ViewParent.cs" />
     <EmbeddedResource Include="Properties\Android.rd.xml" />
   </ItemGroup>
   <ItemGroup>

@@ -121,6 +121,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BeforeAfter_.cs" />
+    <Compile Include="Class.cs" />
     <Compile Include="DOM.cs" />
     <Compile Include="LITERAL_.cs" />
     <Compile Include="OneKit.cs" />

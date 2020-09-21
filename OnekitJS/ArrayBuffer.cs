@@ -66,7 +66,7 @@ namespace cn.onekit.js
             return new JsBoolean((arg is TypedArray) || (arg is DataView));
         }
 
-        public static boolean isView()
+        public static bool isView()
         {
             return false;
         }

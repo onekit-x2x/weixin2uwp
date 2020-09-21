@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace java.lang
+namespace android
 {
-    public static class Array_
+    public class R
     {
-        public static int length(this System.Array THIS)
+        public class id
         {
-            return THIS.Length;
+            public static readonly string content = "content";
         }
     }
 }

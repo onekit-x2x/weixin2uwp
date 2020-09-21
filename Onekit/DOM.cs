@@ -1,6 +1,6 @@
 ﻿using java;
 using thekit;
-using boolean = System.Boolean;
+using bool = System.Boolean;
 using View = Windows.UI.Xaml.FrameworkElement;
 using ViewGroup = Windows.UI.Xaml.Controls.Panel;
 using Activity = Windows.UI.Xaml.Controls.Page;
@@ -47,7 +47,7 @@ namespace cn.onekit
         return -1;
     }
 
-    public static boolean isRoot(View view)
+    public static bool isRoot(View view)
     {
 
         return view.getParent().hashCode() == ((Activity)view.getContext()).findViewById(android.R.id.content).hashCode();
